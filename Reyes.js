@@ -1,6 +1,6 @@
 
 const text =
-  "Childhood is always special, not just because of the freedom and fun, but because of the people we share those memories with. One of the most unforgettable people from my childhood is my best friend, Sarah Elbina. We met in 2016 in Brgy. 18-A, Kahibagat, in Gingoog City. From the first day we talked, I knew we would become close friends. Sarah was not just any ordinary girl—she was funny, kind, and full of energy. We shared many unforgettable moments together, especially when we used to play near the cemetery. Most people would find it scary, but for us, it was a place of adventure and laughter. We would run around, tell stories, and sometimes even pretend we were in a movie. Looking back, it feels funny and a little silly, but those were some of the best days of my life.We spent many afternoons playing games, sharing snacks, and talking about our dreams. Sarah always made me laugh, even when I was feeling sad. Her smile was bright, and her presence made everything better. Our bond was strong, and even now, I cherish all those happy, crazy moments. Though time has passed and we may not see each other as often, Sarah Elbina will always have a special place in my heart. Childhood friendships like ours are rare, and  I’m grateful that we crossed paths in Brgy. 18-A all those years ago.";
+  "CHAROT PRACTICE LANG BASIN NAY MAHATAGANHAHAHHAHAHAHAHAHAHHAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHA";
 
 const paragraph = text.split("");
 
@@ -34,3 +34,4 @@ function startFromBegin() {
 }
 
 startFromBegin();
+

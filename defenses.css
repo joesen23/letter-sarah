@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+/* HEADER */
+.header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo {
+    color: #2f855a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+
+
+
+
+/* HERO + SECTIONS BIG SIZE */
+.hero,
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 10%;
+}
+
+/* SECTION TITLE BIG */
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+                url('adasd.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 14px 28px;
+    background: #2f855a;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* ABOUT */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container img {
+    width: 540px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+.about-text {
+    order: 2;
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #2f855a;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* CARDS (FEATURES + TESTIMONIALS) */
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #2f855a;
+    padding: 18px;
+    border-radius: 12px;
+    width: 270px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 12px;
+    display: block;
+}
+.card.testimonial {
+    background: #2f855a;
+    padding: 40px;
+    border-radius: 16px;
+    width: 340px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card.testimonial p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #f0fff4;
+    margin-bottom: 20px;
+}
+
+.card.testimonial h4 {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2f855a;
+}
+/* CONTACT SECTION */
+.contact-section {
+    min-height: auto;
+    padding: 80px 10%;
+    background: #f0fff4;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.contact-info {
+    background: #2f855a;
+    padding: 40px;
+    border-radius: 16px;
+    color: white;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: #c6f6d5;
+}
+
+.info-icon {
+    font-size: 26px;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    box-shadow: 0 8px 30px rgba(151, 7, 235, 0.08);
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1.5px solid #c6f6d5;
+   
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: black;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #2f855a;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #276749;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #1a202c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* TABLET VIEW */
+@media (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* CELLPHONE VIEW */
+@media (max-width: 768px) {
+
+    /* Show hamburger button */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        text-align: center;
+        margin-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
